@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { Router } from '@angular/router';
 import { MenuItem } from 'primeng/api';
 import { Menu } from 'primeng/menu';
 
@@ -16,7 +17,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.items = [
-      { label: 'Datos Personales', icon: 'pi pi-user' },
+      { label: 'Datos Personales', icon: 'pi pi-user' , routerLink: '/datos-personales' },
       { label: 'Datos Académicos', icon: 'pi pi-book' },
       { label: 'Dirección Profesional', icon: 'pi pi-briefcase' },
       { label: 'Datos Bancarios', icon: 'pi pi-credit-card' },
