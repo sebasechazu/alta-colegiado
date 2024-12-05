@@ -1,15 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
 @import "primeicons/primeicons.css";
 
-/* Aplica la fuente Inter a toda la aplicación */
 body {
     font-family: 'Inter', sans-serif;
-    font-size: 16px; /* Tamaño base ajustable */
-    color: #333; /* Color de texto general */
-  }
-  
-  /* Ajusta para componentes específicos si es necesario */
-  p, h1, h2, h3, h4, h5, h6, input, button, select, textarea {
-    font-family: inherit; /* Asegúrate de que todo herede la fuente */
-  }
-  
+    font-size: 16px;
+    color: #333;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+button,
+select,
+textarea {
+    font-family: inherit;
+}
