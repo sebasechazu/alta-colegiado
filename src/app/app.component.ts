@@ -18,8 +18,8 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this.items = [
       { label: 'Datos Personales', icon: 'pi pi-user' , routerLink: '/datos-personales' },
-      { label: 'Datos Académicos', icon: 'pi pi-book' },
-      { label: 'Dirección Profesional', icon: 'pi pi-briefcase' },
+      { label: 'Datos Académicos', icon: 'pi pi-book' , routerLink: '/datos-academicos' },
+      { label: 'Dirección Profesional', icon: 'pi pi-briefcase' , routerLink: '/direccion-profesional' },
       { label: 'Datos Bancarios', icon: 'pi pi-credit-card' },
       { label: 'Especialidades', icon: 'pi pi-star' },
       { label: 'Premios y distinciones', icon: 'pi pi-trophy' },

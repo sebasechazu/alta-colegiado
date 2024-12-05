@@ -6,7 +6,7 @@ import { InputGroupAddonModule } from 'primeng/inputgroupaddon';
 @Component({
   selector: 'app-datos-personales',
   standalone: true,
-  imports: [InputTextModule , InputGroupModule, InputGroupAddonModule],
+  imports: [InputTextModule, InputGroupModule, InputGroupAddonModule],
   templateUrl: './datos-personales.component.html',
   styleUrl: './datos-personales.component.scss'
 })

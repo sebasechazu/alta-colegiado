@@ -1,3 +1,12 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    border: 1px solid #f0f0f0;
+    border-radius: 4px;
+}
+
 .p-field {
     margin-bottom: 1.5rem;
 }
@@ -5,9 +14,96 @@
 .p-grid {
     gap: 1rem;
 }
-
 .p-field label {
     font-weight: bold;
     margin-bottom: 0.5rem;
     display: block;
+}
+
+.form-container {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.form-column {
+    flex: 1;
+    min-width: 250px;
+}
+
+.profile-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-picture img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-picture p {
+    margin-top: 8px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.footer-row {
+    display: flex;
+    gap: 16px;
+    width: 100%;
+}
+
+.footer-row .p-field {
+    flex: 1;
+}
+
+.action-container {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.checkbox-group {
+    display: flex;
+    gap: 16px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.btn-back,
+.btn-continue,
+.btn-save {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-back {
+    background-color: #f0f0f0;
+    color: #000;
+}
+
+.btn-continue {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.btn-save {
+    background-color: #28a745;
+    color: #fff;
 }

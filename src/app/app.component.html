@@ -1,9 +1,11 @@
 <div class="container" style="display: flex;">
-  <div class="nav" style="flex: 0 0 220px;">
-    <div class="card flex justify-center" style="font-size: 1.2em;">
+  <!-- Menú con ancho ajustado y padding -->
+  <div class="nav" style="flex: 0 0 250px; padding: 20px; box-sizing: border-box; background-color: #f4f4f4; border-right: 1px solid #ddd;">
+    <div class="card flex justify-center" style="font-size: 1.5em; padding: 10px; box-sizing: border-box;">
       <p-menu [model]="items"></p-menu>
     </div>
   </div>
+  <!-- Contenido principal -->
   <div class="content" style="flex: 1; min-height: 100vh;">
     <router-outlet></router-outlet>
   </div>
