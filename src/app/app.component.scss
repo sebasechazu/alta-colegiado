@@ -1,14 +1,15 @@
-.nav {
-    flex: 0 0 250px;
-    padding: 20px;
-    ;
-    box-sizing: border-box;
-    background-color: #f4f4f4;
-    border-right: 1px solid #ddd;
+.header {
+    background-color: rgb(250, 245, 245);
+    color: black;
+    text-align: center;
+    padding: 1rem;
+    row-gap: 1rem;
+    font-size: 2rem;
 }
 
-.nav .card {
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    color: #fff;
 }

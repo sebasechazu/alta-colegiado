@@ -1,6 +1,5 @@
-
 <div class="container">
-    <h1>Datos Personales</h1>
+    <h3 style="border-bottom: 1px solid #ccc; padding-bottom: 10px;">Datos Personales</h3>
     <div class="form-container">
         <!-- Columna 1 -->
         <div class="form-column">
@@ -29,55 +28,69 @@
         <!-- Columna 3 -->
         <div class="form-column profile-column">
             <div class="profile-picture">
-                <img src="https://via.placeholder.com/150" alt="Profile Picture" />
+                <div class="picture-wrapper">
+                    <img ngSrc="frentecasa.jpg" alt="Profile Picture" width="400" height="200" priority/>
+                    <span class="edit-icon">✎</span>
+                </div>
                 <p>Profile Picture</p>
             </div>
         </div>
+
     </div>
 
     <!-- Footer de la fila -->
     <div class="footer-container">
         <div class="footer-row">
+
             <div class="p-field">
                 <label for="Municipio">Municipio</label>
-                <select id="Municipio" class="p-inputtext">
-                    <option value="">Seleccione...</option>
-                </select>
+                <p-dropdown optionLabel="Municipio" placeholder="Municipio" />
             </div>
+
             <div class="p-field">
                 <label for="Nacionalidad">Nacionalidad</label>
-                <select id="Nacionalidad" class="p-inputtext">
-                    <option value="">Seleccione...</option>
-                </select>
+                <p-dropdown optionLabel="Nacionalidad" placeholder="Nacionalidad" />
             </div>
+
             <div class="p-field">
                 <label for="provincia">Provincia</label>
-                <select id="provincia" class="p-inputtext">
-                    <option value="">Seleccione...</option>
-                </select>
+                <p-dropdown optionLabel="Provincia" placeholder="Provincia" />
             </div>
+
         </div>
     </div>
 
     <!-- Checkboxes y botones -->
     <div class="action-container">
-        <div class="p-field">
+        <div class="">
             <label>Señale la opción correcta:</label>
+            <br />
+            <br />
             <div class="checkbox-group">
                 <div>
-                    <input type="checkbox" id="colegiacion" />
-                    <label for="colegiacion">1º Colegiación en COAM</label>
+                    <p-checkbox />
+                    <label for="colegiacion" style="margin-left: 10px;">1º Colegiación en COAM</label>
+
                 </div>
-                <div>
-                    <input type="checkbox" id="reincorporacion" />
-                    <label for="reincorporacion">Reincorporación al COAM</label>
+                <div style="margin-left: 10px;">
+                    <p-checkbox />
+                    <label for="reincorporacion" style="margin-left: 10px;">Reincorporación al COAM</label>
                 </div>
             </div>
         </div>
-        <div class="button-group">
-            <button class="btn-back">ATRÁS</button>
-            <button class="btn-continue">CONTINUAR</button>
-            <button class="btn-save">GUARDAR</button>
+
+    </div>
+    <br />
+
+    <div class="footer-form">
+        <div style="float: left;">
+            <p-button label="ATRÁS" severity="secondary" />
+        </div>
+        <div style="float: right;">
+            <div class="button-container">
+                <p-button label="CONTINUAR" severity="contrast"></p-button>
+                <p-button label="GUARDAR" severity="contrast"></p-button>
+            </div>
         </div>
     </div>
 </div>
