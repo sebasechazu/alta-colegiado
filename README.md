@@ -1,6 +1,6 @@
 # AltaColegiado
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.8.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.8 and uses [Tailwind CSS](https://tailwindcss.com/) for styling.
 
 ## Development server
 

@@ -1,32 +1,31 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { MenuItem } from 'primeng/api';
-import { MenuModule } from 'primeng/menu';
-import { ButtonModule } from 'primeng/button';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, MenuModule, ButtonModule],
+  imports: [RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent implements OnInit {
+interface NavItem {
+  label: string;
+  routerLink?: string;
+}
 
-  items: MenuItem[] | undefined;
+export class AppComponent implements OnInit {
+  items: NavItem[] = [];
 
   ngOnInit() {
     this.items = [
-      { label: 'Datos Personales', icon: 'pi pi-user' , routerLink: '/datos-personales' },
-      { label: 'Datos Académicos', icon: 'pi pi-book' , routerLink: '/datos-academicos' },
-      { label: 'Dirección Profesional', icon: 'pi pi-briefcase' , routerLink: '/direccion-profesional' },
-      { label: 'Datos Bancarios', icon: 'pi pi-credit-card' },
-      { label: 'Especialidades', icon: 'pi pi-star' },
-      { label: 'Premios y distinciones', icon: 'pi pi-trophy' },
-      { label: 'Publicación de datos', icon: 'pi pi-upload' },
-      { label: 'Aceptación y Enviar', icon: 'pi pi-check' }
+      { label: 'Datos Personales', routerLink: '/datos-personales' },
+      { label: 'Datos Académicos', routerLink: '/datos-academicos' },
+      { label: 'Dirección Profesional', routerLink: '/direccion-profesional' },
+      { label: 'Datos Bancarios' },
+      { label: 'Especialidades' },
+      { label: 'Premios y distinciones' },
+      { label: 'Publicación de datos' },
+      { label: 'Aceptación y Enviar' }
     ];
   }
-
-
 }
