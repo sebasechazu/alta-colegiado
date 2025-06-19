@@ -1,96 +1,79 @@
-<div class="container">
-    <h3 style="border-bottom: 1px solid #ccc; padding-bottom: 10px;">Datos Personales</h3>
-    <div class="form-container">
-        <!-- Columna 1 -->
-        <div class="form-column">
-            <div class="p-field">
-                <label for="numeroColegiado">Nº Colegiado</label>
-                <input id="numeroColegiado" type="text" pInputText />
-            </div>
-            <div class="p-field">
-                <label for="apellido1">Apellido 1</label>
-                <input id="apellido1" type="text" pInputText />
-            </div>
-        </div>
-
-        <!-- Columna 2 -->
-        <div class="form-column">
-            <div class="p-field">
-                <label for="nombre">Nombre</label>
-                <input id="nombre" type="text" pInputText />
-            </div>
-            <div class="p-field">
-                <label for="apellido2">Apellido 2</label>
-                <input id="apellido2" type="text" pInputText />
-            </div>
-        </div>
-
-        <!-- Columna 3 -->
-        <div class="form-column profile-column">
-            <div class="profile-picture">
-                <div class="picture-wrapper">
-                    <img ngSrc="frentecasa.jpg" alt="Profile Picture" width="400" height="200" priority/>
-                    <span class="edit-icon">✎</span>
-                </div>
-                <p>Profile Picture</p>
-            </div>
-        </div>
-
+<div class="p-4 border rounded space-y-6">
+  <h3 class="text-xl border-b pb-2">Datos Personales</h3>
+  <div class="flex flex-col sm:flex-row gap-4">
+    <!-- Columna 1 -->
+    <div class="flex-1 space-y-4">
+      <div class="flex flex-col">
+        <label for="numeroColegiado" class="mb-1">Nº Colegiado</label>
+        <input id="numeroColegiado" type="text" class="border rounded p-2" />
+      </div>
+      <div class="flex flex-col">
+        <label for="apellido1" class="mb-1">Apellido 1</label>
+        <input id="apellido1" type="text" class="border rounded p-2" />
+      </div>
     </div>
-
-    <!-- Footer de la fila -->
-    <div class="footer-container">
-        <div class="footer-row">
-
-            <div class="p-field">
-                <label for="Municipio">Municipio</label>
-                <p-dropdown optionLabel="Municipio" placeholder="Municipio" />
-            </div>
-
-            <div class="p-field">
-                <label for="Nacionalidad">Nacionalidad</label>
-                <p-dropdown optionLabel="Nacionalidad" placeholder="Nacionalidad" />
-            </div>
-
-            <div class="p-field">
-                <label for="provincia">Provincia</label>
-                <p-dropdown optionLabel="Provincia" placeholder="Provincia" />
-            </div>
-
-        </div>
+    <!-- Columna 2 -->
+    <div class="flex-1 space-y-4">
+      <div class="flex flex-col">
+        <label for="nombre" class="mb-1">Nombre</label>
+        <input id="nombre" type="text" class="border rounded p-2" />
+      </div>
+      <div class="flex flex-col">
+        <label for="apellido2" class="mb-1">Apellido 2</label>
+        <input id="apellido2" type="text" class="border rounded p-2" />
+      </div>
     </div>
-
-    <!-- Checkboxes y botones -->
-    <div class="action-container">
-        <div class="">
-            <label>Señale la opción correcta:</label>
-            <br />
-            <br />
-            <div class="checkbox-group">
-                <div>
-                    <p-checkbox />
-                    <label for="colegiacion" style="margin-left: 10px;">1º Colegiación en COAM</label>
-
-                </div>
-                <div style="margin-left: 10px;">
-                    <p-checkbox />
-                    <label for="reincorporacion" style="margin-left: 10px;">Reincorporación al COAM</label>
-                </div>
-            </div>
+    <!-- Columna 3 -->
+    <div class="flex flex-col items-center">
+      <div class="relative">
+        <div class="w-36 h-36 rounded-full overflow-hidden border relative">
+          <img ngSrc="frentecasa.jpg" alt="Profile Picture" width="200" height="200" priority class="object-cover w-full h-full" />
+          <span class="absolute -bottom-2 left-1/2 -translate-x-1/2 translate-y-full w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm cursor-pointer shadow border-2 border-white">✎</span>
         </div>
-
+        <p class="mt-4 text-sm text-gray-700 text-center">Profile Picture</p>
+      </div>
     </div>
-    <br />
-
-    <div class="footer-form">
-        <div style="float: left;">
-            <p-button label="ATRÁS" severity="secondary" />
-        </div>
-        <div style="float: right;">
-            <div class="button-container">
-                <p-button label="CONTINUAR" severity="contrast"></p-button>
-                <p-button label="GUARDAR" severity="contrast"></p-button>
-            </div>
-        </div>
+  </div>
+  <!-- Footer de la fila -->
+  <div class="flex gap-4">
+    <div class="flex-1 flex flex-col">
+      <label for="Municipio" class="mb-1">Municipio</label>
+      <select id="Municipio" class="border rounded p-2">
+        <option>Municipio</option>
+      </select>
     </div>
+    <div class="flex-1 flex flex-col">
+      <label for="Nacionalidad" class="mb-1">Nacionalidad</label>
+      <select id="Nacionalidad" class="border rounded p-2">
+        <option>Nacionalidad</option>
+      </select>
+    </div>
+    <div class="flex-1 flex flex-col">
+      <label for="provincia" class="mb-1">Provincia</label>
+      <select id="provincia" class="border rounded p-2">
+        <option>Provincia</option>
+      </select>
+    </div>
+  </div>
+  <!-- Checkboxes y botones -->
+  <div class="space-y-4">
+    <label>Señale la opción correcta:</label>
+    <div class="flex gap-4">
+      <label class="flex items-center">
+        <input type="checkbox" class="mr-2" />
+        1º Colegiación en COAM
+      </label>
+      <label class="flex items-center">
+        <input type="checkbox" class="mr-2" />
+        Reincorporación al COAM
+      </label>
+    </div>
+  </div>
+  <div class="flex justify-between pt-4">
+    <button class="px-4 py-2 bg-gray-200 rounded">ATRÁS</button>
+    <div class="space-x-2">
+      <button class="px-4 py-2 bg-blue-600 text-white rounded">CONTINUAR</button>
+      <button class="px-4 py-2 bg-blue-600 text-white rounded">GUARDAR</button>
+    </div>
+  </div>
 </div>
